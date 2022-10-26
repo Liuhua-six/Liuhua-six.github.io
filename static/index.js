@@ -14,7 +14,7 @@ let __Time = 20;
 let __k = 4;
 let _close = false;
 let _fsj = false;
-var url = 'https://eafoo.github.io/eatcat/static/image/ClickBefore.png';
+var url = 'https://github.com/Liuhua-six/chidandan/blob/main/static/image/ClickBefore.png?raw=true';
 
 function isplaying() {
     return document.getElementById('welcome').style.display == 'none' &&
@@ -410,13 +410,13 @@ function showGameScoreLayer() {
     let c = document.getElementById(_gameBBList[_gameBBListIndex - 1].id).className.match(_ttreg)[1];
     l.className = l.className.replace(/bgc\d/, 'bgc' + c);
     document.getElementById('GameScoreLayer-text').innerHTML = hide ? '' : "<span style='color:red;'>" + shareText(_gameScore) + "</span>";
-    let score_text = '您坚持了 ';
-    score_text += "<span style='color:red;'>" + (deviation_time / 1000).toFixed(2) + "</span>" + ' 秒哦！<br>您的得分为 ';
+    let score_text = '您硬了 ';
+    score_text += "<span style='color:red;'>" + (deviation_time / 1000).toFixed(2) + "</span>" + ' 秒哦！<br>单单给您的打分为 ';
     score_text += "<span style='color:red;'>" + _gameScore + "</span>";
-    score_text += '<br>您平均每秒点击了 ';
+    score_text += '<br>您平均每秒高潮了 ';
     score_text += "<span style='color:red;'>" + (_gameScore * 1000 / deviation_time).toFixed(2);
     score_text += "</span>" + ' 次哦！';
-    score_text += "<br>相当于 <span style='color:red;'>" + (_gameScore * 15000 / deviation_time).toFixed(2) + "</span> BPM 下的十六分音符哦！"
+    score_text += "<br>超过了单单 <span style='color:red;'>" + (_gameScore * 15000 / deviation_time).toFixed(2) + "</span> % 的粉丝哦！"
     document.getElementById('GameScoreLayer-score').innerHTML = score_text;
     let bast = cookie('bast-score');
     if (!bast || _gameScore > bast) {
@@ -424,7 +424,7 @@ function showGameScoreLayer() {
         cookie('bast-score', bast, 100);
     }
 
-    document.getElementById('GameScoreLayer-bast').innerHTML = '历史最佳得分 ' + "<span style='color:red;'>" + bast + "</span>";
+    document.getElementById('GameScoreLayer-bast').innerHTML = '旧时最佳表现 ' + "<span style='color:red;'>" + bast + "</span>";
     let now = '您的自定义键型为：' + "<span style='color:red;'>" + key.join('')
         + "</span>";
     document.getElementById('now').innerHTML = now;
@@ -450,11 +450,11 @@ function backBtn() {
 function shareText(score) {
 
     deviation_time = (date2.getTime() - _date1.getTime())
-    if (score <= 2.5 * __Time) return '加油！我相信您可以的！';
-    if (score <= 5 * __Time) return '^_^ 加把劲，底力大王就是您！';
-    if (score <= 7.5 * __Time) return '您！';
-    if (score <= 10 * __Time) return '太 您 了！';
-    return '您是外星人嘛？';
+    if (score <= 2.5 * __Time) return '行不行啊，细狗！';
+    if (score <= 5 * __Time) return '这个彬彬就是逊啦！';
+    if (score <= 7.5 * __Time) return '草！';
+    if (score <= 10 * __Time) return '太 草 了！';
+    return '你tm开挂了吧？！';
 }
 
 function toStr(obj) {
