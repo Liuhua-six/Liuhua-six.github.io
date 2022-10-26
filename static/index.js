@@ -14,7 +14,7 @@ let __Time = 20;
 let __k = 4;
 let _close = false;
 let _fsj = false;
-var url = 'https://liuhua-six.github.io/main/static/image/ClickBefore.png';
+var url = 'https://upload.cc/i1/2022/10/27/z3KHeZ.png';
 
 function isplaying() {
     return document.getElementById('welcome').style.display == 'none' &&
