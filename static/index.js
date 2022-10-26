@@ -14,7 +14,7 @@ let __Time = 20;
 let __k = 4;
 let _close = false;
 let _fsj = false;
-var url = 'https://upload.cc/i1/2022/10/27/z3KHeZ.png';
+var url = 'https://raw.githubusercontent.com/Liuhua-six/Liuhua-six.github.io/main/favicon.ico';
 
 function isplaying() {
     return document.getElementById('welcome').style.display == 'none' &&
